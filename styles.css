@@ -104,17 +104,3 @@ body {
   }
 }
 
-/* This is inside your styles.css file */
-.parallax-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  
-  /* ✨ PUT YOUR NEW IMAGE RIGHT HERE! ✨ */
-  background-image: url('images/absucking.jpeg'); 
-  
-  background-size: cover;
-  background-position: center;
-}
