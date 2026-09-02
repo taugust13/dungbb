@@ -58,3 +58,23 @@ body {
   background-position: 0 0, 20px 20px;
   background-attachment: fixed; /* Now you'll actually see the magic! */
 }
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden; 
+  white-space: nowrap;
+  background-color: #ffb6c1; 
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%; /* This forces it to start fully off the right side */
+  animation: slideMobile 8s linear infinite;
+}
+
+@keyframes slideMobile {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
