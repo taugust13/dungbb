@@ -37,23 +37,24 @@ img {
     height: 200px;
     margin-top: 10000px
 }
-.marquee-container {
-  width: 100%;
-  overflow: hidden; /* Hides the text when it slides off screen */
-  white-space: nowrap;
-  background-color: #ffb6c1; /* A cute soft pink background */
-  padding: 10px 0;
-  margin: 20px 0;
+
+/* This makes the element ready to be squished */
+.squish {
+  display: inline-block; /* Required for transform to work on text/emojis */
+  transition: transform 0.1s ease-in-out;
 }
 
-.marquee-text {
-  display: inline-block;
-  font-size: 20px;
-  animation: slideLeft 8s linear infinite;
+/* This triggers the squish when he taps it */
+.squish:active {
+  transform: scale(0.7); /* Shrinks it to 70% of its size */
 }
 
-/* The actual animation moving it across the screen */
-@keyframes slideLeft {
-  0% { transform: translateX(100vw); } /* Starts off-screen to the right */
-  100% { transform: translateX(-100%); } /* Ends off-screen to the left */
+body {
+  background-color: #ffd1f7; /* Your cute pink base */
+  /* This creates the polka dots! */
+  background-image: radial-gradient(white 15%, transparent 16%), 
+                    radial-gradient(white 15%, transparent 16%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  background-attachment: fixed; /* Now you'll actually see the magic! */
 }
