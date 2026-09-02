@@ -36,6 +36,7 @@ img {
     width: 200px;
     height: 200px;
     margin-top: 10000px
+    border-radius: 50%; /* Makes it a perfect circle */
 }
 
 /* This makes the element ready to be squished */
