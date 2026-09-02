@@ -37,3 +37,23 @@ img {
     height: 200px;
     margin-top: 10000px
 }
+.marquee-container {
+  width: 100%;
+  overflow: hidden; /* Hides the text when it slides off screen */
+  white-space: nowrap;
+  background-color: #ffb6c1; /* A cute soft pink background */
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.marquee-text {
+  display: inline-block;
+  font-size: 20px;
+  animation: slideLeft 8s linear infinite;
+}
+
+/* The actual animation moving it across the screen */
+@keyframes slideLeft {
+  0% { transform: translateX(100vw); } /* Starts off-screen to the right */
+  100% { transform: translateX(-100%); } /* Ends off-screen to the left */
+}
