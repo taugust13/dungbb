@@ -103,3 +103,14 @@ body {
     transform: translateY(-20px); /* Little bounce */
   }
 }
+
+.gradient-tunnel {
+  height: 800px;
+  /* Fades from transparent, to deep pink, back to transparent */
+  background: linear-gradient(
+    to bottom, 
+    rgba(255, 182, 193, 0), 
+    rgba(255, 105, 180, 0.8), 
+    rgba(255, 182, 193, 0)
+  );
+}
