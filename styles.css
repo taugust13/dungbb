@@ -88,6 +88,7 @@ body {
   display: inline-block; 
   font-size: 80px; /* Makes an emoji huge! You can ignore this if you use an image */
   animation: bounce 2s infinite; /* The animation lasts 2 seconds and repeats forever */
+  border-radius: 50%; /* Makes it a perfect circle */
 }
 
 /* The actual bounce physics */
