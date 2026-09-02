@@ -104,3 +104,8 @@ body {
   }
 }
 
+.top-page-h1 {
+  font-size: 24px; /* Adjust as needed */
+  color: #ff69b4; /* A cute pink color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+}
